@@ -1,0 +1,25 @@
+@use "styles/variables";
+
+
+.services{
+    background-color: variables.$background-color;
+    @include variables.flexProps(column, center, center);
+}
+
+.cards{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(376px, 1fr));
+    margin:60px auto 100px;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 36px;
+}
+
+
+@media screen and (max-width: 376px){
+    .cards{
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+}
+
+}

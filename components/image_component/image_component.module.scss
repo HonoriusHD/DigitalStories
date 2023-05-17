@@ -1,0 +1,79 @@
+.image_wrapper{
+    position: relative; 
+    width:100%;
+    .bg{
+        border-radius: 8px;
+    }
+}
+.heroSize{
+    height:80vh;
+    width:200%;
+}
+
+.sectionSize{
+    height:400px;
+}
+.footerSize{
+    width:650px;
+    height:600px;
+}
+
+.legalSize{
+    width:146px;
+    height:37px;
+}
+.smallCardSize{
+    width:376px;
+    height:308px;
+}
+.logoSize{
+    width:160px;
+    height:55px;
+    
+}
+.heroShapes{
+    width:40vw;
+    height:650px;
+}
+.fullStretch{
+    width:100%;
+    height:500px;
+}
+.autoHeight{
+    width:70vw;
+    height: 200px;
+}
+
+
+@media screen and (max-width:1100px) {
+    .heroSize{ 
+        width:100vw;
+        height:30vh;
+    }
+    .logoSize{
+        width:150px;
+        height:50px;
+    }
+    .sectionSize{
+        width:100vw;
+    } .footerSize{
+        width:100%;
+        height:50vh;
+    }
+    
+    // .heroSize{
+    //     height: 28vh;
+    //     width:calc(100vw - 40px);
+    // }
+    
+}
+
+@media screen and (max-width:900px) {
+    .smallCardSize{
+        width:100%;
+        height:218px;
+    }
+    .heroShapes{
+        display: none;
+    }
+}
